@@ -66,10 +66,14 @@ section {
 .content_text{
 
   flex-basis: 480px;
-  flex-shrink: 0;
+  flex-shrink: 1;
   flex-grow: 0;
   padding: 20px;
   text-align: left;
+  width: 100%;
+}
+.content_text video{
+  width: 100%;
 }
 .content_text p{
   font-family: 'Quicksand', sans-serif;
@@ -78,6 +82,7 @@ section {
   line-height: 120%;
   padding-top: 5%;
   text-align: left;
+  width: 100%;
 }
 .content_text h1{
   font-size: 28pt;
@@ -85,6 +90,7 @@ section {
   color: white;
   line-height: 120%;
   font-weight: bold;
+  width: 100%;
 }
 .content_video {
   margin-top: 100px;
