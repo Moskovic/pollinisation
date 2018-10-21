@@ -12,12 +12,44 @@ header{
 
 }
 
+.video_container{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* video accueil responsive */
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 section {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: flex-start;
+}
+
+.overlay_vid{
+  width: 100%;
+  position: absolute;
+  bottom: 30%;
+  left: 7%;
+  text-align: center;
+  z-index: 4;
+}
+
+#logo_bee_overlay {
+  max-width: 100%;
 }
 
 #logo_bee{
@@ -52,10 +84,7 @@ section {
   color: white;
   line-height: 120%;
   font-weight: bold;
-
-
 }
-
 .content_video {
   margin-top: 100px;
   flex-basis: 1000px;
@@ -158,6 +187,7 @@ video#bgvid {
    bottom: 0;
    max-width: 100%;
    max-height: 100%;
+   z-index: 1;
 
 }
 .commencer_button img:hover{
@@ -175,6 +205,7 @@ transform: scale(1.2);
   position: absolute;
   bottom: 0;
   text-align: center;
+  z-index: 2;
 }
 
 #hidden_nav{
