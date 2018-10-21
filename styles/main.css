@@ -64,8 +64,9 @@ section {
   text-align: left;
 }
 .content_text{
+
   flex-basis: 480px;
-  flex-shrink: 1;
+  flex-shrink: 0;
   flex-grow: 0;
   padding: 20px;
   text-align: left;
